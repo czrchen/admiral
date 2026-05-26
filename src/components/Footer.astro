@@ -1,0 +1,82 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="brand">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">Admiral</span>
+      </a>
+      <p>Malaysia's specialist manufacturer of ice cream cones, paper cups, lids and foil sleeves — for brands, food service and OEM.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/products">Products</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Products</h4>
+      <a href="/products">Ice Cream Cones</a>
+      <a href="/products">Waffle &amp; Sugar Cones</a>
+      <a href="/products">Paper Cups &amp; Lids</a>
+      <a href="/products">Foil Sleeves &amp; Lids</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <p class="muted">Manufacturer of ice cream cones &amp; packaging · Malaysia</p>
+      <a href="mailto:enquiry@admiral.com.my">enquiry@admiral.com.my</a>
+      <a href="/contact">Request a quote →</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© {year} Admiral · Ice Cream Cones, Cups &amp; Sleeves Manufacturer</span>
+    <span>Made in Malaysia</span>
+  </div>
+</footer>
+
+<style>
+  .footer { position: relative; background: var(--ink); color: #BCD2DE; margin-top: 110px; padding: 70px 0 30px; }
+  .footer-inner { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1.4fr; gap: 40px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .brand-mark {
+    width: 48px; height: 48px; display: grid; place-items: center;
+    background: var(--red); color: #fff; border-radius: 13px;
+    font-family: var(--font-display); font-weight: 800; font-size: 1.3rem;
+  }
+  .brand-text { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: #fff; letter-spacing: -0.02em; }
+  .footer-brand p { color: #7E96A4; max-width: 330px; font-size: .95rem; line-height: 1.6; }
+
+  .socials { display: flex; gap: 18px; margin-top: 22px; }
+  .socials a { font-size: .88rem; font-weight: 500; color: #7E96A4; transition: color .2s ease; }
+  .socials a:hover { color: var(--red); }
+
+  .footer-col h4 {
+    font-family: var(--font-display); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase;
+    margin-bottom: 18px; color: #5E7886;
+  }
+  .footer-col a { display: block; color: #BCD2DE; padding: 6px 0; font-size: .95rem; transition: color .18s ease; }
+  .footer-col a:hover { color: #fff; }
+  .footer-col .muted { color: #7E96A4; margin-bottom: 14px; font-size: .95rem; line-height: 1.6; }
+
+  .footer-bottom {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    margin-top: 54px; padding-top: 26px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    color: #5E7886; font-size: .86rem;
+  }
+
+  @media (max-width: 860px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .footer-inner { grid-template-columns: 1fr; gap: 30px; } }
+</style>
