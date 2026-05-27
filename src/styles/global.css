@@ -4,18 +4,18 @@
    =========================================================== */
 
 :root {
-  /* Brand — vibrant blue primary, deep blue dark sections, sunny yellow */
-  --navy:       #102E7A;   /* deep Mamee blue (dark sections) */
-  --navy-2:     #1A45A8;
-  --red:        #1273EB;   /* bright blue (primary accent / CTA) */
-  --red-deep:   #0E5FCB;
-  --gold:       #FFCB05;   /* sunny yellow accent */
+  /* Brand — Admiral cyan, playful & colourful (own colours) */
+  --navy:       #0A3A57;   /* deep ocean (dark sections) */
+  --navy-2:     #0E5E86;
+  --red:        #01AEF0;   /* Admiral cyan (primary accent / CTA) */
+  --red-deep:   #0192C8;
+  --gold:       #FFC400;   /* sunny yellow accent */
 
   /* Surface + text */
-  --ink:        #16233B;   /* deep blue-grey text */
-  --ink-soft:   #5A6680;
-  --paper:      #FBFCFF;   /* cool white page background */
-  --cream:      #FFF4CC;   /* warm sunny-yellow alt section */
+  --ink:        #14222B;   /* deep blue-grey text */
+  --ink-soft:   #5A6B75;
+  --paper:      #FBFEFF;   /* cool white page background */
+  --cream:      #E7F6FD;   /* light cyan alt section */
   --white:      #FFFFFF;
   --line:       rgba(20, 34, 43, 0.10);
   --line-strong:rgba(20, 34, 43, 0.16);
@@ -146,12 +146,16 @@ section { position: relative; }
 .center .section-lead { margin-left: auto; margin-right: auto; }
 
 /* ---------- Full-bleed wavy colour ribbons (section connectors) ---------- */
-.ribbon { position: relative; background: var(--navy); color: #fff; margin: 100px 0; }
+.ribbon { position: relative; background: linear-gradient(135deg, var(--red), var(--navy)); color: #fff; margin: 100px 0; }
 .ribbon-ink { background: var(--ink); }
 .ribbon-cream { background: var(--cream); color: var(--ink); }
 .ribbon-cream h2 { color: var(--ink); }
 .ribbon-inner { position: relative; z-index: 1; padding: 88px 0; }
 .ribbon h2 { color: #fff; }
+.ribbon-cream { background: #FFF4CC; }
+.ribbon:not(.ribbon-cream) .btn-primary { background: var(--gold); color: #0A3A57; }
+.ribbon:not(.ribbon-cream) .btn-primary::before { background: var(--red-deep); }
+.ribbon:not(.ribbon-cream) .btn-primary:hover { color: #fff; }
 .wave { position: absolute; left: 0; width: 100%; line-height: 0; z-index: 2; pointer-events: none; }
 .wave svg { display: block; width: 100%; height: 56px; }
 .wave path { fill: var(--paper); }
