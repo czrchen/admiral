@@ -11,7 +11,9 @@ const links = [
 <header class="nav" id="site-nav">
   <div class="container nav-inner">
     <a href="/" class="brand" aria-label="Admiral home">
-      <span class="brand-mark">A</span>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="5.2" fill="#FFCB05"/><path d="M7 12h10l-5 9.5z" fill="#fff"/></svg>
+      </span>
       <span class="brand-text">Admiral</span>
     </a>
 
@@ -54,10 +56,10 @@ const links = [
   .brand { display: flex; align-items: center; gap: 11px; }
   .brand-mark {
     width: 44px; height: 44px; display: grid; place-items: center;
-    background: var(--red); color: #fff; border-radius: 12px;
-    font-family: var(--font-display); font-weight: 800; font-size: 1.25rem;
+    background: var(--red); border-radius: 12px;
     transition: transform .2s ease;
   }
+  .brand-mark svg { width: 26px; height: 26px; }
   .brand:hover .brand-mark { transform: scale(1.06) rotate(-4deg); }
   .brand-text {
     font-family: var(--font-display);

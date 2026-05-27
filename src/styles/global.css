@@ -1,21 +1,21 @@
 /* ===========================================================
-   Admiral — clean modern food-packaging manufacturer
-   Ocean blue · cyan — ice cream cones, cups & sleeves
+   Admiral — playful ice-cream packaging manufacturer
+   Bright blue · sunny yellow (Mamee-style, colourful)
    =========================================================== */
 
 :root {
-  /* Brand — "navy" role = deep ocean blue for dark sections */
-  --navy:       #0A3A57;
-  --navy-2:     #0E4E73;
-  --red:        #01AEF0;   /* Admiral cyan (primary accent / CTA) */
-  --red-deep:   #0192C8;
-  --gold:       #FFB81C;
+  /* Brand — vibrant blue primary, deep blue dark sections, sunny yellow */
+  --navy:       #102E7A;   /* deep Mamee blue (dark sections) */
+  --navy-2:     #1A45A8;
+  --red:        #1273EB;   /* bright blue (primary accent / CTA) */
+  --red-deep:   #0E5FCB;
+  --gold:       #FFCB05;   /* sunny yellow accent */
 
   /* Surface + text */
-  --ink:        #14222B;   /* dark blue-grey text */
-  --ink-soft:   #5A6B75;
-  --paper:      #F8FBFD;   /* cool white page background */
-  --cream:      #E7F4FB;   /* light cyan alt section */
+  --ink:        #16233B;   /* deep blue-grey text */
+  --ink-soft:   #5A6680;
+  --paper:      #FBFCFF;   /* cool white page background */
+  --cream:      #FFF4CC;   /* warm sunny-yellow alt section */
   --white:      #FFFFFF;
   --line:       rgba(20, 34, 43, 0.10);
   --line-strong:rgba(20, 34, 43, 0.16);

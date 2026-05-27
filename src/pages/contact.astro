@@ -19,7 +19,7 @@ const email = "enquiry@admiral.com.my";
   <section class="companies">
     <div class="container company-grid" data-reveal-group>
       <article class="company-card" style="--accent:var(--red)">
-        <div class="company-logo"><span class="company-mark">A</span></div>
+        <div class="company-logo"><span class="company-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="5.2" fill="#FFCB05"/><path d="M7 12h10l-5 9.5z" fill="#fff"/></svg></span></div>
         <h2>Admiral</h2>
         <p class="company-reg">Ice cream cones, cups &amp; sleeves manufacturer · Malaysia</p>
         <ul class="company-info">
@@ -64,9 +64,9 @@ const email = "enquiry@admiral.com.my";
   .company-grid { display: grid; grid-template-columns: 1fr; gap: 26px; max-width: 640px; }
   .company-mark {
     display: grid; place-items: center; width: 56px; height: 56px;
-    background: var(--red); color: #fff; border-radius: 14px;
-    font-family: var(--font-display); font-weight: 800; font-size: 1.5rem;
+    background: var(--red); border-radius: 14px;
   }
+  .company-mark svg { width: 32px; height: 32px; }
   .company-card {
     background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--accent);
     border-radius: var(--r-lg); padding: 34px 32px;
