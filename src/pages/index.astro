@@ -24,7 +24,7 @@ const quality = [
     <div class="container hero-grid">
       <div class="hero-copy" data-hero-stagger>
         <span class="eyebrow">Ice Cream Cones, Cups &amp; Sleeves · Malaysia</span>
-        <h1>The packaging behind <span class="accent">every scoop.</span></h1>
+        <h1 data-split data-split-accent="2">The packaging behind every scoop.</h1>
         <p class="hero-lead">
           Admiral manufactures custom ice cream cones, paper cups, lids and foil sleeves for
           ice cream brands, dessert shops and food-service partners across Malaysia and beyond.
@@ -141,7 +141,7 @@ const quality = [
         <span class="eyebrow">Why Admiral</span>
         <h2 class="section-title">A packaging partner you can rely on</h2>
         <p class="section-lead">From the cone to the cup, we make the food-grade packaging that carries your brand — consistent quality, custom printing and supply you can plan around.</p>
-        <ul class="quality-list">
+        <ul class="quality-list" data-scrub>
           {quality.map((q) => (
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg>
@@ -167,23 +167,6 @@ const quality = [
             <div class="cert-plate"><span>{c}</span></div>
           ))}
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CTA ============ -->
-  <section class="cta ribbon">
-    <Wave side="top" />
-    <Wave side="bottom" />
-    <div class="container ribbon-inner">
-      <div class="cta-box" data-reveal>
-        <div class="cta-copy">
-          <h2>Need cones or cups for your brand?</h2>
-          <p>Tell us your product, sizes and volumes — we'll quote custom manufacturing and printing.</p>
-        </div>
-        <a href="/contact" class="btn btn-primary">Get a quote
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
     </div>
   </section>
